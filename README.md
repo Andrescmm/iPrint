@@ -8,3 +8,7 @@
 
 ## Start App
 ### python manage.py startapp main
+
+## DataBase
+### Make migrations for data base
+### python manage.py makemigrations main
