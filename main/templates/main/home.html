@@ -1,0 +1,290 @@
+
+{% extends 'main/base.html' %} {% block title %} Home {% endblock %} {% block content%}
+{% load static %}
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="{% static 'assets/img/img1.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
+                    data-aos-delay="100">
+                    <h3>Que son las impresiones 3D?</h3>
+                    <p>
+                        Las impresiones 3D son una tecnología revolucionaria que ha ganado popularidad en los últimos
+                        años. Permiten la creación de objetos tridimensionales mediante la superposición de capas de
+                        material, lo que a menudo se conoce como "fabricación aditiva". Para una persona que no está
+                        familiarizada con este concepto, podría resultar intrigante descubrir cómo funciona y cuáles son
+                        sus aplicaciones.
+
+                        En pocas palabras, la impresión 3D es un proceso que transforma diseños digitales en objetos
+                        físicos tangibles. Para lograr esto, se utiliza una impresora 3D, que es una máquina
+                        especializada capaz de construir objetos en tres dimensiones. A diferencia de las impresoras
+                        convencionales que solo imprimen en papel, una impresora 3D utiliza diversos materiales como
+                        plástico, metal, cerámica o incluso alimentos para crear objetos tridimensionales.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="image col-lg-6" style='background-image: {% static ' assets/img/features.jpg' %};'
+                    data-aos="fade-right"></div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="bx bx-receipt"></i>
+                        <h4>Primero</h4>
+                        <p>El proceso comienza con la creación de un modelo digital en un software de diseño asistido
+                            por computadora (CAD). Aquí es donde se define la forma, tamaño y características del objeto
+                            que se desea imprimir. Una vez que se ha creado el modelo digital, se envía a la impresora
+                            3D, que se encarga de dividirlo en capas muy delgadas.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="bx bx-cube-alt"></i>
+                        <h4>Segundo</h4>
+                        <p>A continuación, la impresora 3D comienza a construir el objeto capa por capa. Esto se logra
+                            mediante la deposición o fusión de material, dependiendo del tipo de tecnología utilizada
+                            por la impresora. Algunas impresoras 3D utilizan filamentos de plástico fundido que se
+                            depositan de manera controlada capa por capa, mientras que otras utilizan polvos que se
+                            solidifican mediante la aplicación de calor o luz.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="bx bx-images"></i>
+                        <h4>Resultado</h4>
+                        <p>El resultado final es un objeto tridimensional completamente funcional que coincide con el
+                            diseño digital original. Las impresoras 3D han demostrado ser extremadamente versátiles y se
+                            utilizan en una amplia gama de campos, incluyendo la medicina, la arquitectura, la industria
+                            manufacturera, la moda, la joyería y la educación, entre otros.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Servicios</h2>
+                <p>Nuestros Servicios</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4><a href="">Impresion con modelo del cliente</a></h4>
+                        <p>El cliente nos proporciona su modelo que no este en el catalogo para la impresion a travez de
+                            la plataforma.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-world"></i></div>
+                        <h4><a href="">Impresion sin modelo</a></h4>
+                        <p>Se cotiza la creacion del modelo y la impresion a pedido del cliente.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-arch"></i></div>
+                        <h4><a href="">Impresiones 3D del catalogo</a></h4>
+                        <p>Se escoge algun modelo de nuestro catalogo para imprimir.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Catalogo</h2>
+                <p>Encuentra nuestros modelos disponibles.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li id="filter-app" data-filter=".filter-app">Entretenimiento</li>
+                        <li id="filter-card" data-filter=".filter-card">Decoracion</li>
+                        <li id="filter-web" data-filter=".filter-web">Repuestos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e1.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Perro</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e1.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Perro"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Luz de noche</h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d1.png' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Luz de noche"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details2.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 1</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r1.png' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Repuesto 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details3.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d12.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Jarron</h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d12.jpg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Jarron"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e9.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ajedres</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e9.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cocodrilo"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e3.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Dragon</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e3.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dragon"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r3.jpeg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 3</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r3.jpeg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Repuesto 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d13.jpeg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Jarron 1 </h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d13.jpeg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Jarron 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r2.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 2</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r2.jpg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+
+
+    {% endblock %}
