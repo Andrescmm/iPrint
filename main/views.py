@@ -33,6 +33,22 @@ def index(response, id):
 def home(response):
     return render(response, "main/home.html",{})
 
+def welcome(response):
+    return render(response, "main/welcome.html",{})
+
+def about(response):
+    return render(response, "main/about.html",{})
+
+
+def services(response):
+    return render(response, "main/services.html",{})
+
+def prices(response):
+    return render(response, "main/prices.html",{})
+
+def contact(response):
+    return render(response, "main/contact.html",{})
+
 
 def create(response):
     if response.method == "POST":
