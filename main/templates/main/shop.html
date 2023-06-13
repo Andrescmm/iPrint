@@ -1,0 +1,243 @@
+{% extends 'main/base.html' %} {% block title %} Shop {% endblock %} {% block content%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zay Shop - Product Listing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="{% static 'assets_shop/img/apple-icon.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets_shop/img/favicon.ico' %}">
+
+    <link rel="stylesheet" href="{% static 'assets_shop/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets_shop/css/templatemo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets_shop/css/custom.css' %}">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{% static 'assets_shop/css/fontawesome.min.css' %}">
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+   
+
+
+
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Catalogo</h2>
+                <p>Encuentra nuestros modelos disponibles.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li id="filter-app" data-filter=".filter-app">Entretenimiento</li>
+                        <li id="filter-card" data-filter=".filter-card">Decoracion</li>
+                        <li id="filter-web" data-filter=".filter-web">Repuestos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e1.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Perro</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e1.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Perro"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="/detail1" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Luz de noche</h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d1.png' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Luz de noche"><i class="bx bx-plus"></i></a>
+                                <a href="/detail2" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r1.png' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 1</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r1.png' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Repuesto 1"><i class="bx bx-plus"></i></a>
+                                <a href="/detail3" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d12.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Jarron</h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d12.jpg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Jarron"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e9.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Ajedres</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e9.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cocodrilo"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/entretenimiento/e3.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Dragon</h4>
+                            <p>Entretenimiento</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/entretenimiento/e3.jpg' %}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dragon"><i
+                                        class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r3.jpeg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 3</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r3.jpeg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Repuesto 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/decoracion/d13.jpeg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Jarron 1 </h4>
+                            <p>Decoracion</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/decoracion/d13.jpeg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Jarron 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'iPrint Img/repuestos/r2.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Repuesto 2</h4>
+                            <p>Repuestos</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'iPrint Img/repuestos/r2.jpg' %}" data-gallery="portfolioGallery"
+                                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+  <!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>iPrint<span>.</span></h3>
+              <p>
+                Urb. Campiña Paisajista, s/n, Quinta Vivanco, Arequipa 0400 <br>
+                NY 535022, USA<br><br>
+                <strong>Telefono:</strong> 999 888 765<br>
+                <strong>Emails:</strong> nicole.durand@ucsp.edu.pe<br>
+                andres.cusirramos@ucsp.edu.pe<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="{% static 'assets_shop/js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'assets_shop/js/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script src="{% static 'assets_shop/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets_shop/js/templatemo.js' %}"></script>
+    <script src="{% static 'assets_shop/js/custom.js' %}"></script>
+    <!-- End Script -->
+</body>
+
+</html>
+
+{% endblock %}

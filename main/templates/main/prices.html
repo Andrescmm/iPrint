@@ -1,109 +1,169 @@
+
 {% extends 'main/base.html' %} {% block title %} Home {% endblock %} {% block content%}
 {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main id="main">
 
-  <!-- ======= Pricing Section ======= -->
-  <section id="pricing" class="pricing section-bg">
-    <div class="container" data-aos="fade-up">
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>little squirrel | Landing, Responsive &amp; Business Templatee</title>
 
-      <div class="section-title">
-        <h2>Precios</h2>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets_pricing/img/favicons/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets_pricing/img/favicons/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets_pricing/img/favicons/favicon-16x16.png' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets_pricing/img/favicons/favicon.ico' %}">
+  <link rel="manifest" href="{% static 'assets_pricing/img/favicons/manifest.json' %}">
+  <meta name="msapplication-TileImage" content="{% static 'assets_pricing/img/favicons/mstile-150x150.png' %}">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="{% static 'assets_pricing/css/theme.css' %}" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="bg-600">
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="mb-6">Opciones de Impresión</h1>
+            <h4 class="mb-6">Es importante tener en cuenta que los precios pueden variar dependiendo de la complejidad del objeto, el tamaño, el material utilizado y otros factores.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-5 mb-md-0 h-100">
+              <div class="text-center mb-5"><span class="badge bg-black fw-normal text-uppercase bg-secondary">Por Tiempo</span></div>
+              <div class="card-body px-4 py-6 py-md-5 py-lg-6">
+                <!-- <div class="d-flex justify-content-start text-secondary"><span class="h4 mb-0 mt-2 me-2">$</span><span class="display-3 fw-medium">19.</span><span class="display-4 fw-medium">00</span></div> -->
+                <p class="text-muted mb-2 my-md-3">Tarifa de impresión por tiempo</p>
+                <hr class="border border-1" />
+                <ul class="list-unstyled">
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger tipo de impresora</li>
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger color de filamento</li>
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Opcion mas barata</li>
+                  <li class="mb-3"><i class="fas fa-check text-muted me-2"></i>Recomendado para impresiones de gran tamaño</li>
+                </ul>
+                <div class="d-grid"> <a class="btn btn-lg btn-primary" href="https://wa.link/56mrvy">Cotizar</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-5 mb-md-0 h-100">
+              <div class="text-center mb-5"><span class="badge bg-black fw-normal text-uppercase bg-info">Materiales</span></div>
+              <div class="card-body px-4 py-6 py-md-5 py-lg-6">
+                <!-- <div class="d-flex justify-content-start text-secondary"><span class="h4 mb-0 mt-2 me-2">$</span><span class="display-3 fw-medium">29.</span><span class="display-4 fw-medium">00</span></div> -->
+                <p class="text-muted mb-2 my-md-3">Dependerá del el uso de materiales específicos, como filamentos de plástico, resinas o metales.</p>
+                <hr class="border border-1" />
+                <ul class="list-unstyled">
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger tipo de impresora</li>
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger color de filamento</li>
+                  <li class="mb-3"><i class="fas fa-check text-muted me-2"></i>Recomendado para impresiones de pequeño tamaño</li>
+                </ul>
+                <div class="d-grid"><a class="btn btn-lg btn-secondary" href="https://wa.link/56mrvy">Cotizar</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-5 mb-md-0 h-100">
+              <div class="text-center mb-5"><span class="badge bg-black fw-normal text-uppercase bg-danger">Acabado</span></div>
+              <div class="card-body px-4 py-6 py-md-5 py-lg-6">
+                <!-- <div class="d-flex justify-content-start text-secondary"><span class="h4 mb-0 mt-2 me-2">$</span><span class="display-3 fw-medium">49.</span><span class="display-4 fw-medium">00</span></div> -->
+                <p class="text-muted mb-2 my-md-3">Servicios de acabado y postprocesamiento, como lijado, pintura o pulido</p>
+                <hr class="border border-1" />
+                <ul class="list-unstyled">
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger Tipo de impresora</li>
+                  <li class="mb-3"><i class="fas fa-check text-info me-2"></i>Escoger Color de filamento</li>
+                  <li class="mb-3"><i class="fas fa-check text-muted me-2"></i>Acabados mas detallados para impresiones premium</li>
+                </ul>
+                <div class="d-grid"> <a class="btn btn-lg btn-primary" href="https://wa.link/56mrvy">Cotizar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>
-        Es importante tener en cuenta que los precios pueden variar dependiendo de la complejidad del objeto, el tamaño,
-        el material utilizado y otros factores.
-      </p>
-      <div class="row">
+      <!-- end of .container-->
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="box">
-            <h3>Tarifa de impresión por tiempo</h3>
-            <p>
-              Dependerá del tipo de impresora 3D y de la complejidad del objeto a imprimir.
-            </p>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Cotizar</a>
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>iPrint<span>.</span></h3>
+                <p>
+                  Urb. Campiña Paisajista, s/n, Quinta Vivanco, Arequipa 0400 <br>
+                  NY 535022, USA<br><br>
+                  <strong>Telefono:</strong> 999 888 765<br>
+                  <strong>Emails:</strong> nicole.durand@ucsp.edu.pe<br>
+                  andres.cusirramos@ucsp.edu.pe<br>
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
             </div>
+  
+  
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="box">
-            <h3>Tarifa de materiales</h3>
-            <p>
-              Dependerá del el uso de materiales específicos, como filamentos de plástico, resinas o metales.
-            </p>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Cotizar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <div class="box">
-            <h3>Costos de acabado y postprocesamiento</h3>
-            <p>
-              Servicios de acabado y postprocesamiento, como lijado, pintura o pulido.
-            </p>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Cotizar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-          <div class="box">
-            <h3>Tarifa de diseño y modelado</h3>
-            <p>
-              Servicios de diseño y modelado 3D, por hora o por proyecto para la creación de modelos personalizados.
-            </p>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Cotizar</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section><!-- End Pricing Section -->
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-info">
-            <h3>iPrint<span>.</span></h3>
-            <p>
-              Urb. Campiña Paisajista, s/n, Quinta Vivanco, Arequipa 0400 <br>
-              NY 535022, USA<br><br>
-              <strong>Telefono:</strong> 999 888 765<br>
-              <strong>Emails:</strong> nicole.durand@ucsp.edu.pe<br>
-              andres.cusirramos@ucsp.edu.pe<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
+    </footer><!-- End Footer -->
 
 
-      </div>
-    </div>
-  </div>
-</footer><!-- End Footer -->
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="{% static 'assets_pricing/vendors/@popperjs/popper.min.js' %}"></script>
+  <script src="{% static 'assets_pricing/vendors/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets_pricing/vendors/is/is.min.js' %}"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="{% static 'assets_pricing/vendors/fontawesome/all.min.js' %}"></script>
+  <script src="{% static 'assets_pricing/js/theme.js' %}"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Rubik:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </body>
+
 
 </html>
 

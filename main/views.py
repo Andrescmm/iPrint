@@ -49,6 +49,31 @@ def prices(response):
 def contact(response):
     return render(response, "main/contact.html",{})
 
+def shop(response):
+    return render(response, "main/shop.html",{})
+
+def shop_single(response):
+    return render(response, "main/shop-single.html",{})
+
+def cart(response):
+    return render(response, "main/cart.html",{})
+
+def checkout(response):
+    return render(response, "main/checkout.html",{})
+
+def login(response):
+    return render(response, "main/login.html",{})
+
+def user(response):
+    return render(response, "main/user.html",{})
+
+def detail1(response):
+    return render(response, "main/portfolio-details.html",{})
+def detail2(response):
+    return render(response, "main/portfolio-details2.html",{})
+def detail3(response):
+    return render(response, "main/portfolio-details3.html",{})
+
 
 def create(response):
     if response.method == "POST":
